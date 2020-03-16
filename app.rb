@@ -2,6 +2,10 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
+  get '/' do
+    "Try on of the followg routes:  /name, /hometown, /favorite-song"
+  end
+
   get '/name' do
     "My name is __"
   end
